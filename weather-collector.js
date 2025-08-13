@@ -2,7 +2,7 @@ const https = require('https');
 const fs = require('fs');
 
 const API_KEY = process.env.OPENWEATHER_API_KEY;
-const CITY = 'Maintenon';
+const CITY = 'Plounévez-Moëdec';
 const COUNTRY = 'FR';
 
 function collectWeather() {
