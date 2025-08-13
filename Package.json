@@ -1,0 +1,9 @@
+{
+  "name": "meteo-collector",
+  "version": "1.0.0",
+  "description": "Collecteur de données météo simple",
+  "main": "weather-collector.js",
+  "scripts": {
+    "start": "node weather-collector.js"
+  }
+}
