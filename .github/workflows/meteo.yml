@@ -1,24 +1,24 @@
-name: Collecte Météo Automatique
+name: Collecte Meteo Automatique
 
 on:
   schedule:
- - cron: '0 * * * *'  # Toutes les heures
-  workflow_dispatch:      # Manuel
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
 jobs:
   collecter-meteo:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Récupérer le code
+    - name: Recuperer le code
       uses: actions/checkout@v4
     
     - name: Installer Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: "18"
     
-    - name: Collecter les données météo
+    - name: Collecter les donnees meteo
       env:
         OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
       run: node weather-collector.js
@@ -26,7 +26,7 @@ jobs:
     - name: Sauvegarder sur GitHub
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "Météo Bot"
+        git config --local user.name "Meteo Bot"
         git add meteo.json
-        git diff --staged --quiet || git commit -m "📊 Données météo $(date '+%d/%m/%Y %H:%M')"
+        git diff --staged --quiet || git commit -m "Donnees meteo $(date '+%d/%m/%Y %H:%M')"
         git push
