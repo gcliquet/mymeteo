@@ -2,7 +2,7 @@ const https = require('https');
 const fs = require('fs');
 
 // Configuration simple
-const API_KEY = process.env.913c7338a444aeaf1fdb57b57653b7a2;
+const API_KEY = process.env.OPENWEATHER_API_KEY;
 const CITY = 'Plounévez-Moëdec';  // Changez votre ville ici
 const COUNTRY = 'FR';      // Changez votre pays ici
 
@@ -40,11 +40,6 @@ function collectWeather() {
                 
                 // Ajouter la nouvelle donnée
                 allData.push(record);
-                
-                // Garder seulement les 100 derniers enregistrements
-                if (allData.length > 100) {
-                    allData = allData.slice(-100);
-                }
                 
                 // Sauvegarder
                 fs.writeFileSync('meteo.json', JSON.stringify(allData, null, 2));
