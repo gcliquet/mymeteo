@@ -741,5 +741,26 @@
     "coucher_soleil": "19:31:10",
     "latitude": 48.5667,
     "longitude": -3.45
+  },
+  {
+    "date": "14/08/2025 07:05:04",
+    "timestamp": "2025-08-14T07:05:05.016Z",
+    "temperature": 16.4,
+    "ressenti": 16.5,
+    "temp_min": 16.4,
+    "temp_max": 17.4,
+    "humidite": 93,
+    "pression": 1019,
+    "visibilite": 10000,
+    "vent_vitesse": 2,
+    "vent_direction_deg": 236,
+    "vent_direction": "SW",
+    "vent_rafales": 2.9,
+    "nuages": 100,
+    "meteo_principale": "Clouds",
+    "description": "couvert",
+    "icone": "04d",
+    "lever_soleil": "05:06:00",
+    "coucher_soleil": "19:31:10"
   }
 ]
