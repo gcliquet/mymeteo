@@ -72,6 +72,19 @@ function collectWeather() {
                     latitude: weather.coord.lat,
                     longitude: weather.coord.lon
                 };
+
+// Dans weather-collector.js, vérifier la dernière collecte
+const lastRecord = allData[allData.length - 1];
+if (lastRecord) {
+    const lastTime = new Date(lastRecord.timestamp);
+    const now = new Date();
+    const diffMinutes = (now - lastTime) / (1000 * 60);
+    
+    if (diffMinutes < 50) {
+        console.log('⏭️ Collecte trop récente, passage ignoré');
+        return;
+    }
+}
                 
                 // Charger les données existantes
                 let allData = [];
