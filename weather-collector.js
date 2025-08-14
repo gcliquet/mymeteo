@@ -28,12 +28,10 @@ function collectWeather() {
             try {
                 const weather = JSON.parse(data);
                 
-                // Créer un enregistrement enrichi
+                // Créer un enregistrement avec seulement les données demandées
                 const record = {
                     date: new Date().toLocaleString('fr-FR'),
                     timestamp: new Date().toISOString(),
-                    ville: weather.name,
-                    pays: weather.sys.country,
                     
                     // Températures
                     temperature: Math.round(weather.main.temp * 10) / 10,
@@ -58,33 +56,10 @@ function collectWeather() {
                     description: weather.weather[0].description,
                     icone: weather.weather[0].icon,
                     
-                    // Pluie et neige (si présentes)
-                    pluie_1h: weather.rain?.['1h'] || 0,
-                    pluie_3h: weather.rain?.['3h'] || 0,
-                    neige_1h: weather.snow?.['1h'] || 0,
-                    neige_3h: weather.snow?.['3h'] || 0,
-                    
                     // Soleil
                     lever_soleil: new Date(weather.sys.sunrise * 1000).toLocaleTimeString('fr-FR'),
-                    coucher_soleil: new Date(weather.sys.sunset * 1000).toLocaleTimeString('fr-FR'),
-                    
-                    // Coordonnées
-                    latitude: weather.coord.lat,
-                    longitude: weather.coord.lon
+                    coucher_soleil: new Date(weather.sys.sunset * 1000).toLocaleTimeString('fr-FR')
                 };
-
-// Dans weather-collector.js, vérifier la dernière collecte
-const lastRecord = allData[allData.length - 1];
-if (lastRecord) {
-    const lastTime = new Date(lastRecord.timestamp);
-    const now = new Date();
-    const diffMinutes = (now - lastTime) / (1000 * 60);
-    
-    if (diffMinutes < 50) {
-        console.log('⏭️ Collecte trop récente, passage ignoré');
-        return;
-    }
-}
                 
                 // Charger les données existantes
                 let allData = [];
@@ -92,16 +67,37 @@ if (lastRecord) {
                     allData = JSON.parse(fs.readFileSync('meteo.json', 'utf8'));
                 }
                 
+                // Vérifier si une collecte récente existe (éviter les doublons)
+                const lastRecord = allData[allData.length - 1];
+                if (lastRecord && lastRecord.timestamp) {
+                    const lastTime = new Date(lastRecord.timestamp);
+                    const now = new Date();
+                    const diffMinutes = (now - lastTime) / (1000 * 60);
+                    
+                    if (diffMinutes < 50) {
+                        console.log(`⏭️ Collecte trop récente (${Math.round(diffMinutes)}min), passage ignoré`);
+                        return;
+                    }
+                }
+                
                 // Ajouter la nouvelle donnée
                 allData.push(record);
+                
+                // Nettoyage automatique : garder seulement les 30 derniers jours
+                const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+                allData = allData.filter(entry => {
+                    const entryDate = new Date(entry.timestamp || entry.date);
+                    return entryDate > thirtyDaysAgo;
+                });
                 
                 // Sauvegarder
                 fs.writeFileSync('meteo.json', JSON.stringify(allData, null, 2));
                 
-                console.log(`✅ ${record.date} - ${record.ville}: ${record.temperature}°C, ${record.description}`);
+                console.log(`✅ ${record.date} - ${CITY}: ${record.temperature}°C, ${record.description}`);
                 console.log(`   Vent: ${record.vent_vitesse} m/s ${record.vent_direction} (${record.vent_direction_deg}°)`);
                 console.log(`   Humidité: ${record.humidite}%, Pression: ${record.pression} hPa`);
                 console.log(`   Nuages: ${record.nuages}%, Visibilité: ${record.visibilite}m`);
+                console.log(`   Total d'enregistrements: ${allData.length}`);
                 
             } catch (error) {
                 console.error('❌ Erreur:', error.message);
@@ -114,5 +110,5 @@ if (lastRecord) {
 }
 
 // Lancer la collecte
-console.log('🌤️ Collecte des données météo enrichies...');
+console.log('🌤️ Collecte des données météo simplifiées...');
 collectWeather();
