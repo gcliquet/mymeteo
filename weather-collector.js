@@ -83,13 +83,6 @@ function collectWeather() {
                 // Ajouter la nouvelle donnée
                 allData.push(record);
                 
-                // Nettoyage automatique : garder seulement les 30 derniers jours
-                const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
-                allData = allData.filter(entry => {
-                    const entryDate = new Date(entry.timestamp || entry.date);
-                    return entryDate > thirtyDaysAgo;
-                });
-                
                 // Sauvegarder
                 fs.writeFileSync('meteo.json', JSON.stringify(allData, null, 2));
                 
