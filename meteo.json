@@ -21006,5 +21006,26 @@
     "icone": "01d",
     "lever_soleil": "06:17:25",
     "coucher_soleil": "17:47:21"
+  },
+  {
+    "date": "04/10/2025 12:48:31",
+    "timestamp": "2025-10-04T12:48:31.718Z",
+    "temperature": 14.4,
+    "ressenti": 13.5,
+    "temp_min": 14.4,
+    "temp_max": 14.4,
+    "humidite": 62,
+    "pression": 1015,
+    "visibilite": 10000,
+    "vent_vitesse": 11.6,
+    "vent_direction_deg": 283,
+    "vent_direction": "WNW",
+    "vent_rafales": 18.3,
+    "nuages": 10,
+    "meteo_principale": "Rain",
+    "description": "légère pluie",
+    "icone": "10d",
+    "lever_soleil": "06:17:25",
+    "coucher_soleil": "17:47:21"
   }
 ]
