@@ -25164,5 +25164,26 @@
     "icone": "03n",
     "lever_soleil": "06:33:37",
     "coucher_soleil": "17:25:09"
+  },
+  {
+    "date": "14/10/2025 23:24:27",
+    "timestamp": "2025-10-14T23:24:28.277Z",
+    "temperature": 12.5,
+    "ressenti": 12,
+    "temp_min": 12.5,
+    "temp_max": 12.5,
+    "humidite": 85,
+    "pression": 1027,
+    "visibilite": 10000,
+    "vent_vitesse": 5.9,
+    "vent_direction_deg": 72,
+    "vent_direction": "ENE",
+    "vent_rafales": 10.4,
+    "nuages": 40,
+    "meteo_principale": "Clouds",
+    "description": "partiellement nuageux",
+    "icone": "03n",
+    "lever_soleil": "06:33:37",
+    "coucher_soleil": "17:25:09"
   }
 ]
