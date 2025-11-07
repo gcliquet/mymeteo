@@ -34404,5 +34404,26 @@
     "icone": "04d",
     "lever_soleil": "07:09:31",
     "coucher_soleil": "16:45:29"
+  },
+  {
+    "date": "07/11/2025 17:26:42",
+    "timestamp": "2025-11-07T17:26:43.395Z",
+    "temperature": 13.4,
+    "ressenti": 13.2,
+    "temp_min": 12.4,
+    "temp_max": 13.4,
+    "humidite": 93,
+    "pression": 1005,
+    "visibilite": 10000,
+    "vent_vitesse": 5.1,
+    "vent_direction_deg": 246,
+    "vent_direction": "WSW",
+    "vent_rafales": 9.6,
+    "nuages": 100,
+    "meteo_principale": "Clouds",
+    "description": "couvert",
+    "icone": "04n",
+    "lever_soleil": "07:09:31",
+    "coucher_soleil": "16:45:29"
   }
 ]
