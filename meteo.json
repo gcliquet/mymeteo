@@ -52506,5 +52506,26 @@
     "icone": "10n",
     "lever_soleil": "08:04:59",
     "coucher_soleil": "16:22:40"
+  },
+  {
+    "date": "25/12/2025 05:35:55",
+    "timestamp": "2025-12-25T05:35:55.933Z",
+    "temperature": 1.6,
+    "ressenti": -4.7,
+    "temp_min": 1.6,
+    "temp_max": 1.6,
+    "humidite": 64,
+    "pression": 1020,
+    "visibilite": 3957,
+    "vent_vitesse": 9.6,
+    "vent_direction_deg": 60,
+    "vent_direction": "ENE",
+    "vent_rafales": 16,
+    "nuages": 68,
+    "meteo_principale": "Snow",
+    "description": "chutes de neige",
+    "icone": "13n",
+    "lever_soleil": "08:04:59",
+    "coucher_soleil": "16:22:40"
   }
 ]
