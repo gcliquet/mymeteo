@@ -56790,5 +56790,26 @@
     "icone": "10d",
     "lever_soleil": "08:05:28",
     "coucher_soleil": "16:32:23"
+  },
+  {
+    "date": "05/01/2026 13:06:12",
+    "timestamp": "2026-01-05T13:06:12.485Z",
+    "temperature": 1.4,
+    "ressenti": -3.1,
+    "temp_min": 1.4,
+    "temp_max": 2.4,
+    "humidite": 97,
+    "pression": 1015,
+    "visibilite": 5557,
+    "vent_vitesse": 4.9,
+    "vent_direction_deg": 23,
+    "vent_direction": "NNE",
+    "vent_rafales": 9.7,
+    "nuages": 100,
+    "meteo_principale": "Snow",
+    "description": "chutes de neige",
+    "icone": "13d",
+    "lever_soleil": "08:05:28",
+    "coucher_soleil": "16:32:23"
   }
 ]
