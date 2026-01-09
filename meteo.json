@@ -58218,5 +58218,26 @@
     "icone": "04n",
     "lever_soleil": "08:04:12",
     "coucher_soleil": "16:37:04"
+  },
+  {
+    "date": "09/01/2026 08:44:57",
+    "timestamp": "2026-01-09T08:44:57.412Z",
+    "temperature": 6.4,
+    "ressenti": 1.8,
+    "temp_min": 4.4,
+    "temp_max": 6.4,
+    "humidite": 78,
+    "pression": 1003,
+    "visibilite": 10000,
+    "vent_vitesse": 8.9,
+    "vent_direction_deg": 299,
+    "vent_direction": "WNW",
+    "vent_rafales": 14.2,
+    "nuages": 100,
+    "meteo_principale": "Rain",
+    "description": "légère pluie",
+    "icone": "10d",
+    "lever_soleil": "08:04:12",
+    "coucher_soleil": "16:37:04"
   }
 ]
