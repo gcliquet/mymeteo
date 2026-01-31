@@ -66219,5 +66219,26 @@
     "icone": "04n",
     "lever_soleil": "07:44:44",
     "coucher_soleil": "17:09:34"
+  },
+  {
+    "date": "31/01/2026 04:41:33",
+    "timestamp": "2026-01-31T04:41:33.294Z",
+    "temperature": 3.3,
+    "ressenti": 0,
+    "temp_min": 3.3,
+    "temp_max": 3.3,
+    "humidite": 93,
+    "pression": 994,
+    "visibilite": 10000,
+    "vent_vitesse": 3.6,
+    "vent_direction_deg": 179,
+    "vent_direction": "S",
+    "vent_rafales": 7.7,
+    "nuages": 50,
+    "meteo_principale": "Rain",
+    "description": "pluie modérée",
+    "icone": "10n",
+    "lever_soleil": "07:44:44",
+    "coucher_soleil": "17:09:34"
   }
 ]
