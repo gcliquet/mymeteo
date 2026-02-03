@@ -67290,5 +67290,26 @@
     "icone": "04d",
     "lever_soleil": "07:40:41",
     "coucher_soleil": "17:14:28"
+  },
+  {
+    "date": "03/02/2026 09:56:21",
+    "timestamp": "2026-02-03T09:56:21.498Z",
+    "temperature": 7.4,
+    "ressenti": 4.5,
+    "temp_min": 7.4,
+    "temp_max": 8.4,
+    "humidite": 88,
+    "pression": 990,
+    "visibilite": 10000,
+    "vent_vitesse": 4.7,
+    "vent_direction_deg": 197,
+    "vent_direction": "SSW",
+    "vent_rafales": 10.1,
+    "nuages": 100,
+    "meteo_principale": "Clouds",
+    "description": "couvert",
+    "icone": "04d",
+    "lever_soleil": "07:40:41",
+    "coucher_soleil": "17:14:28"
   }
 ]
