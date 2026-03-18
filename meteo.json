@@ -81969,5 +81969,26 @@
     "icone": "01n",
     "lever_soleil": "06:21:20",
     "coucher_soleil": "18:22:31"
+  },
+  {
+    "date": "18/03/2026 07:15:45",
+    "timestamp": "2026-03-18T07:15:45.938Z",
+    "temperature": 7.4,
+    "ressenti": 4.4,
+    "temp_min": 7.4,
+    "temp_max": 7.4,
+    "humidite": 85,
+    "pression": 1012,
+    "visibilite": 10000,
+    "vent_vitesse": 4.9,
+    "vent_direction_deg": 122,
+    "vent_direction": "ESE",
+    "vent_rafales": 15.5,
+    "nuages": 5,
+    "meteo_principale": "Clear",
+    "description": "ciel dégagé",
+    "icone": "01d",
+    "lever_soleil": "06:21:20",
+    "coucher_soleil": "18:22:31"
   }
 ]
