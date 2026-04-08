@@ -88857,5 +88857,26 @@
     "icone": "01n",
     "lever_soleil": "05:37:33",
     "coucher_soleil": "18:53:25"
+  },
+  {
+    "date": "08/04/2026 20:58:08",
+    "timestamp": "2026-04-08T20:58:08.968Z",
+    "temperature": 11.4,
+    "ressenti": 10.8,
+    "temp_min": 11.4,
+    "temp_max": 11.4,
+    "humidite": 84,
+    "pression": 1023,
+    "visibilite": 10000,
+    "vent_vitesse": 1.4,
+    "vent_direction_deg": 44,
+    "vent_direction": "NE",
+    "vent_rafales": 1.5,
+    "nuages": 4,
+    "meteo_principale": "Clear",
+    "description": "ciel dégagé",
+    "icone": "01n",
+    "lever_soleil": "05:37:33",
+    "coucher_soleil": "18:53:25"
   }
 ]
