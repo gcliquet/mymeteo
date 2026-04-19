@@ -91965,5 +91965,26 @@
     "icone": "01n",
     "lever_soleil": "05:15:52",
     "coucher_soleil": "19:09:38"
+  },
+  {
+    "date": "19/04/2026 03:45:51",
+    "timestamp": "2026-04-19T03:45:51.677Z",
+    "temperature": 6.1,
+    "ressenti": 4.5,
+    "temp_min": 6.1,
+    "temp_max": 6.1,
+    "humidite": 94,
+    "pression": 1026,
+    "visibilite": 10000,
+    "vent_vitesse": 2.1,
+    "vent_direction_deg": 39,
+    "vent_direction": "NE",
+    "vent_rafales": 2.2,
+    "nuages": 5,
+    "meteo_principale": "Clear",
+    "description": "ciel dégagé",
+    "icone": "01n",
+    "lever_soleil": "05:15:52",
+    "coucher_soleil": "19:09:38"
   }
 ]
