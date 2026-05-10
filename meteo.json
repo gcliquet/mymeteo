@@ -97677,5 +97677,26 @@
     "icone": "04n",
     "lever_soleil": "04:40:17",
     "coucher_soleil": "19:40:11"
+  },
+  {
+    "date": "10/05/2026 06:41:27",
+    "timestamp": "2026-05-10T06:41:27.704Z",
+    "temperature": 11.4,
+    "ressenti": 11.1,
+    "temp_min": 11.4,
+    "temp_max": 11.4,
+    "humidite": 94,
+    "pression": 1010,
+    "visibilite": 10000,
+    "vent_vitesse": 8.1,
+    "vent_direction_deg": 63,
+    "vent_direction": "ENE",
+    "vent_rafales": 12.4,
+    "nuages": 100,
+    "meteo_principale": "Clouds",
+    "description": "couvert",
+    "icone": "04d",
+    "lever_soleil": "04:40:17",
+    "coucher_soleil": "19:40:11"
   }
 ]
