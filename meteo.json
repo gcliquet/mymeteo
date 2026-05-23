@@ -100428,5 +100428,26 @@
     "icone": "01d",
     "lever_soleil": "04:24:06",
     "coucher_soleil": "19:57:17"
+  },
+  {
+    "date": "23/05/2026 12:04:39",
+    "timestamp": "2026-05-23T12:04:40.004Z",
+    "temperature": 15.4,
+    "ressenti": 15,
+    "temp_min": 15.4,
+    "temp_max": 17.4,
+    "humidite": 78,
+    "pression": 1028,
+    "visibilite": 10000,
+    "vent_vitesse": 3.8,
+    "vent_direction_deg": 28,
+    "vent_direction": "NNE",
+    "vent_rafales": 3.2,
+    "nuages": 2,
+    "meteo_principale": "Clear",
+    "description": "ciel dégagé",
+    "icone": "01d",
+    "lever_soleil": "04:24:06",
+    "coucher_soleil": "19:57:17"
   }
 ]
