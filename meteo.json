@@ -119244,5 +119244,26 @@
     "icone": "02d",
     "lever_soleil": "05:12:39",
     "coucher_soleil": "19:22:37"
+  },
+  {
+    "date": "19/08/2026 20:38:50",
+    "timestamp": "2026-08-19T20:38:50.079Z",
+    "temperature": 16.4,
+    "ressenti": 16.2,
+    "temp_min": 16.4,
+    "temp_max": 16.4,
+    "humidite": 80,
+    "pression": 1011,
+    "visibilite": 10000,
+    "vent_vitesse": 4.3,
+    "vent_direction_deg": 245,
+    "vent_direction": "WSW",
+    "vent_rafales": 10,
+    "nuages": 7,
+    "meteo_principale": "Clear",
+    "description": "ciel dégagé",
+    "icone": "01n",
+    "lever_soleil": "05:12:39",
+    "coucher_soleil": "19:22:37"
   }
 ]
